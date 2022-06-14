@@ -1,0 +1,59 @@
+
+ul.imageGallery.lightSlider.lSSlide li {
+    padding: 4px;
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #d8d8d8;
+}
+ul.imageGallery.lightSlider.lSSlide li img {
+    width: auto!important;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding-bottom: 5px;
+}
+.custom-phone {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.custom-phone .button {
+    background: #197cda;
+    width: 300px;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.utility .list-info{
+    color: #170202;
+
+}
+.utility span{
+    color: #0628c4;
+}
+.content-text p{
+    color: black;
+    font-weight: bold;
+}
+.detail-list a img{
+    float: left;
+    margin-right: 50px;
+}
+.detail-list .info-real{
+    display: flex;
+    flex-direction: column;
+    }
+.detail-list .date-right{
+    color: #0628c4;
+    margin-right: 2px;
+}
+.wrap-btn-book-room {
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
