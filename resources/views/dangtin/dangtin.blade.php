@@ -34,33 +34,33 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-md-6">
-                                <label for="">Chọn quận</label>
-                                <select class="form-control" name="quan_id" id="quan">
-                                    <option value="">--Chọn quận</option>--}}
-                                    @foreach($loaiquan as $data)
-                                        <option value="{{$data->id}}">{{$data->Tenquan}}</option>--}}
-                                    @endforeach
-                                </select>
-                                <label for="">Chọn Phường</label>
-                                <select class="form-control" name="quan_id"  id="phuong">
-                                       <option>Mời bạn chọn phường</option>
-                                </select>
-                            </div>
-
 {{--                            <div class="col-md-6">--}}
-{{--                                <label for="exampleFormControlSelect1">Chọn Khu Vực</label>--}}
-{{--                                <select class="form-control" name="phuong_id" id="exampleFormControlSelect2">--}}
+{{--                                <label for="">Chọn quận</label>--}}
+{{--                                <select class="form-control" name="quan_id" id="quan">--}}
+{{--                                    <option value="">--Chọn quận</option>--}}
 {{--                                    @foreach($loaiquan as $data)--}}
 {{--                                        <option value="{{$data->id}}">{{$data->Tenquan}}</option>--}}
-{{--                                        @if($data->phuong)--}}
-{{--                                            @foreach($data->phuong as $data1)--}}
-{{--                                                    <option value="{{$data1->id}}">--{{$data1->TenPhuong}}</option>--}}
-{{--                                            @endforeach--}}
-{{--                                        @endif--}}
 {{--                                    @endforeach--}}
 {{--                                </select>--}}
+{{--                                <label for="">Chọn Phường</label>--}}
+{{--                                <select class="form-control" name="quan_id"  id="phuong">--}}
+{{--                                       <option>Mời bạn chọn phường</option>--}}
+{{--                                </select>--}}
 {{--                            </div>--}}
+
+                            <div class="col-md-6">
+                                <label for="exampleFormControlSelect1">Chọn Khu Vực</label>
+                                <select class="form-control" name="phuong_id" id="exampleFormControlSelect2">
+                                    @foreach($loaiquan as $data)
+                                        <option value="{{$data->id}}">{{$data->Tenquan}}</option>
+                                        @if($data->phuong)
+                                            @foreach($data->phuong as $data1)
+                                                    <option value="{{$data1->id}}">--{{$data1->TenPhuong}}</option>
+                                            @endforeach
+                                        @endif
+                                    @endforeach
+                                </select>
+                            </div>
 
                         </div>
 
